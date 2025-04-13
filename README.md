@@ -26,7 +26,7 @@ Takes parallel 4-bit inputs from the SIPO and computes an 8-bit result.
 ### Parallel-In Serial-Out (PISO)
 Outputs the 8-bit product serially once the FSM signals that computation is complete via a `done` flag.
 
-## 🛠 Tools Used
+## Tools Used
 
 - **Verilog HDL** for module implementation
 - **Cadence Genus** for synthesis and timing analysis
@@ -38,7 +38,7 @@ Outputs the 8-bit product serially once the FSM signals that computation is comp
 - **Refactoring Delays**: Incompatibility between the SIPO and multiplier module required late-stage rewrites.
 - **FSM Design**: Future iterations will consider using a synchronous FSM to better constrain timing.
 
-## ⏱ Clock Performance Testing
+## Clock Performance Testing
 
 Simulations were run at different clock frequencies to test the behavior under real-world conditions:
 
@@ -51,7 +51,7 @@ Simulations were run at different clock frequencies to test the behavior under r
 - **Area Estimate**: Approximately (32 µm)²
 - **I/O Ports**: `start`, `data_in`, `clk`, `reset`, `done`, `data_out`
 
-## 📄 Reports and Testing
+## Reports and Testing
 
 - Detailed synthesis and timing reports were generated using Cadence Genus.
 - Each module includes individual testbenches and simulation verification.
